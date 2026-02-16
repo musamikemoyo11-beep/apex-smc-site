@@ -1,246 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Apex SMC Bot</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apex SMC Bot</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f9;
+        color: #222;
+        margin: 0;
+        padding: 0;
+    }
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #0d0d0d, #111827);
-            color: white;
-            text-align: center;
-        }
+    header {
+        background: #1a1a2e;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
 
-        nav {
-            position: sticky;
-            top: 0;
-            background:#111827;
-            padding:10px 0;
-            text-align:center;
-            z-index: 999;
-        }
+    h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
+    .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        background: #ffcc00;
+        color: #000;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: 0.3s;
+    }
 
-        nav a:hover {
-            color: gold;
-        }
+    .btn:hover {
+        background: #e6b800;
+        transform: scale(1.05);
+    }
 
-        .hero {
-            padding: 120px 20px;
-        }
+    section {
+        padding: 40px 20px;
+        max-width: 900px;
+        margin: auto;
+    }
 
-        h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-            color: gold;
-        }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
 
-        p {
-            color: #ccc;
-            font-size: 18px;
-        }
+    .card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        flex: 1 1 250px;
+        text-align: center;
+    }
 
-        .btn {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 15px 35px;
-            background: gold;
-            color: black;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 30px;
-            transition: 0.3s;
-        }
+    .card img {
+        max-width: 100px;
+        margin-bottom: 10px;
+    }
 
-        .btn:hover {
-            background: orange;
-            transform: scale(1.05);
-        }
+    /* How-it-works list */
+    .how-it-works ol {
+        padding-left: 20px;
+        font-size: 1.1rem;
+    }
 
-        .section {
-            padding: 80px 20px;
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+        .cards {
+            flex-direction: column;
+            align-items: center;
         }
-
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-        }
-
-        .card {
-            background: #1f2937;
-            padding: 30px;
-            width: 280px;
-            border-radius: 15px;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-        }
-
-        img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
-        footer {
-            padding: 30px;
-            background: #0d0d0d;
-            color: gray;
-        }
-    </style>
+    }
+</style>
 </head>
-
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-  <a href="#hero">Home</a>
-  <a href="#dashboard">Dashboard</a>
-  <a href="#performance">Performance</a>
-  <a href="#journal">Journal</a>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="hero">
+<header>
     <h1>Apex SMC Bot</h1>
-    <p>Institutional Smart Money Automation for MT5</p>
-    <a href="mailto:musamikemoyo11@gmail.com?subject=Request%20Access%20to%20Apex%20SMC%20Bot&body=Hi%20Musa,%0A%0AI%20would%20like%20access%20to%20the%20Apex%20SMC%20Bot.%0AThank%20you!" class="btn">Request Access</a>>
-</section>
+    <a href="mailto:musamikemoyo11@gmail.com?subject=Request%20Access%20to%20Apex%20SMC%20Bot&body=Hi%20Musa,%0AI%20would%20like%20access%20to%20the%20Apex%20SMC%20Bot.%0AThank%20you!" class="btn">Request Access</a>
+</header>
 
-<!-- CORE FEATURES -->
-<section class="section" id="features">
-    <h2>Core Features</h2>
-    <div class="features">
-        <div class="card">
-            <h3>H4 Liquidity Sweeps</h3>
-            <p>Trades institutional liquidity zones.</p>
-        </div>
-
-        <div class="card">
-            <h3>Fair Value Gaps</h3>
-            <p>Automatic FVG detection and execution logic.</p>
-        </div>
-
-        <div class="card">
-            <h3>ATR Risk Control</h3>
-            <p>Dynamic stop loss & take profit system.</p>
-        </div>
-
-        <div class="card">
-            <h3>Break Even Protection</h3>
-            <p>Locks profit automatically at defined thresholds.</p>
-        </div>
-    </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="section" id="how">
+<section class="how-it-works">
     <h2>How It Works</h2>
-    <div class="features">
-        <div class="card">
-            <h3>1. Detect Liquidity</h3>
-            <p>Identifies H4 liquidity sweeps and market manipulation zones.</p>
-        </div>
+    <ol>
+        <li>Install MT5 on your computer or VPS</li>
+        <li>Attach the Apex SMC EA to your charts</li>
+        <li>Watch it trade automatically with smart TP/SL</li>
+    </ol>
+</section>
 
+<section class="features">
+    <h2>Features</h2>
+    <div class="cards">
         <div class="card">
-            <h3>2. Confirm Structure</h3>
-            <p>Waits for Smart Money confirmation using FVG logic.</p>
+            <img src="images/dashboard1.png" alt="Smart TP/SL">
+            <h3>Smart TP/SL</h3>
+            <p>Automatic take profit, stop loss, and break-even management for optimal risk control.</p>
         </div>
-
         <div class="card">
-            <h3>3. Execute With Control</h3>
-            <p>Enters trades with ATR-based SL/TP and automatic break-even protection.</p>
+            <img src="images/dashboard2.png" alt="Liquidity Logic">
+            <h3>Liquidity Logic</h3>
+            <p>Detects key liquidity zones on higher timeframes for institutional-style entries.</p>
+        </div>
+        <div class="card">
+            <img src="images/backtest.png" alt="Backtest">
+            <h3>Backtested</h3>
+            <p>Tested on historical data for consistent performance across multiple pairs.</p>
         </div>
     </div>
 </section>
 
-<!-- DASHBOARD / SCREENSHOTS -->>
-    <section class="section" id="dashboard">
-    <h2>EA Dashboard</h2>
-    <!-- Images removed -->
-</section>>
-    
-
-<!-- PERFORMANCE -->
-<section class="section" id="performance">
+<section class="performance">
     <h2>Performance</h2>
-    <!-- <img src="images/backtest.png" alt="Backtest Equity Curve"/> -->
-    <p>Backtest results using historical data for strategy validation.</p>
+    <p>Track your EA's performance with real-time updates and historical backtests.</p>
 </section>
 
-<!-- TRADING JOURNAL -->
-<section class="section" id="journal">
-    <h2>My Trading Journal</h2>
-    <p>Tracking trades, lessons, and improvements. Discipline over hype.</p>
-    <ul>
-        <li>2026-02-15: Tested H4 sweep logic – results aligned with expectations.</li>
-        <li>2026-02-16: Adjusted BE trigger to 50% – reduced small losses.</li>
-    </ul>
-</section>
-
-<!-- FUTURE PLANS -->
-<section class="section" id="roadmap">
-    <h2>Future Plans</h2>
-    <ul>
-        <li>Improve break-even logic with dynamic ATR adjustments</li>
-        <li>Add Telegram trade notifications</li>
-        <li>Enhance risk management features</li>
-        <li>Explore paid EA version once consistency proven</li>
-    </ul>
-</section>
-
-<!-- DEVELOPMENT JOURNEY -->
-<section class="section" id="journey">
-    <h2>Development Journey</h2>
-    <p>
-        Apex SMC Bot is an ongoing personal project focused on disciplined,
-        rule-based Smart Money automation.
-    </p>
-    <p>
-        The goal is long-term consistency, risk control, and continuous improvement —
-        not hype or unrealistic returns.
-    </p>
-</section>
-
-<!-- RISK MANAGEMENT -->
-<section class="section" id="risk">
-    <h2>Risk Management First</h2>
-    <div class="features">
-        <div class="card">
-            <h3>Daily Goal Protection</h3>
-            <p>Stops trading automatically once daily target is reached.</p>
-        </div>
-
-        <div class="card">
-            <h3>Maximum Loss Control</h3>
-            <p>Prevents emotional overtrading by enforcing daily drawdown limits.</p>
-        </div>
-
-        <div class="card">
-            <h3>Capital Preservation</h3>
-            <p>Designed to protect equity before chasing profits.</p>
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-    © 2026 Apex SMC Bot | Built for Personal Trading & Learning
+<footer style="background:#1a1a2e;color:#fff;text-align:center;padding:20px;">
+    &copy; 2026 Musa M. All rights reserved.
 </footer>
 
 </body>
 </html>
 
+<section id="live-dashboard">
+    <h2>Live EA Dashboard</h2>
+    <table id="dashboard-table" border="1" style="width:100%; text-align:center; border-collapse: collapse;">
+        <thead style="background:#1a1a2e; color:#fff;">
+            <tr><th>Time</th><th>Profit</th><th>Balance</th></tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</section>
 
+<script>
+async function loadDashboard() {
+    const response = await fetch('ea_log.csv');
+    const data = await response.text();
+    const rows = data.trim().split('\n');
+    const tbody = document.querySelector('#dashboard-table tbody');
+    tbody.innerHTML = ''; // Clear previous rows
+
+    rows.forEach(row => {
+        const cols = row.split(',');
+        const tr = document.createElement('tr');
+        cols.forEach(col => {
+            const td = document.createElement('td');
+            td.textContent = col;
+            tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+    });
+}
+
+// Load on page load
+loadDashboard();
+
+// Auto-refresh every 10 seconds
+setInterval(loadDashboard, 10000);
+</script>
+
+#dashboard-table th, #dashboard-table td {
+    padding: 8px;
+}
+#dashboard-table tr:nth-child(even) {
+    background: #f2f2f2;
+}
